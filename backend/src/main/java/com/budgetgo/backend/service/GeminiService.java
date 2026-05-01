@@ -14,10 +14,9 @@ import java.util.Map;
 @Service
 public class GeminiService {
 
-    private static final String API_KEY = "AIzaSyDSJ55BwwbAu1YhyDyMPDaD2NsUtKJxNcU";
+    private static final String API_KEY = "YOUR_GEMINI_API_KEY_HERE";
 
-    private final String GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key="
-            + API_KEY;
+    private final String GEMINI_API_URL = "YOUR GEMINI_API_ENDPOINT_HERE" + API_KEY;
     private final RestTemplate restTemplate = new RestTemplate();
 
     public Map<String, Object> generateTripPlan(String origin, String destination, int days, double budget,
